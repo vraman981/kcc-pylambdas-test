@@ -21,15 +21,15 @@
 
 ## 2. Install required packages  and create requriements file
 
-    >``─❯ pip3 install boto3``
+   >``─❯ pip3 install boto3``
     
-    >``─❯ pip freeze > requirements.txt ``
+   >``─❯ pip freeze > requirements.txt ``
     
 ## 3. Build 
 
-    >``─❯ pip3 install -r requirements.txt -t . ``
+   > ``─❯ pip3 install -r requirements.txt -t . ``
 
-    >``─❯ zip -r create-pytest.zip . ``
+   > ``─❯ zip -r create-pytest.zip . ``
 
 ## 3. Deploy 
 

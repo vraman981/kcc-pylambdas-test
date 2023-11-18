@@ -3,35 +3,33 @@
 
 ## 1. Setup
 
-1. **Python**
-
-    >``─❯ brew install python3``
-
-2. **Pip package manager**
-
-    >``─❯ brew install pip3``
-
-3. **Virtualenv** - Create an isolated environment
-
-    >``─❯ pip install virtualenv``
-
-    >``─❯ python3 -m venv py3.11.6``
-    
-    >``─❯ source py3.11.6/bin/activate``
+```zsh
+─❯ brew install python3
+─❯ brew install pip3
+─❯ pip install virtualenv
+─❯ python3 -m venv py3.11.6
+─❯ source py3.11.6/bin/activate
+```
 
 ## 2. Install required packages  and create requriements file
 
-   >``─❯ pip3 install boto3``
-    
-   >``─❯ pip freeze > requirements.txt ``
-    
+```zsh
+─❯ pip3 install boto3
+─❯ pip freeze > requirements.txt
+```
+
 ## 3. Build 
 
-   > ``─❯ pip3 install -r requirements.txt -t . ``
-
-   > ``─❯ zip -r create-pytest.zip . ``
+```
+─❯ cd package
+─❯ cp  ../create-pytest.py ./
+─❯ pip3 install -r ../requirements.txt -t . 
+─❯ zip -r create-pytest.zip . 
+```
 
 ## 3. Deploy 
+
+**Deploy from ./package folder**
 
 1. source switch
 

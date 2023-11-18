@@ -53,14 +53,15 @@
     ``
 
 4. Invoke a lamdba function from aws commandline
+    >``─❯   aws lambda invoke --function-name create-pytest --payload fileb://req.json  outputfile.txt ``
 
-    >``
-    ─❯ aws lambda invoke --profile aws-staging-us-east-1-contributor \
-    --function-name GetChapterLambda \
-    --invocation-type RequestResponse \
-    --payload file://chapterreq.json \
-    response.json
-    ``
+    *req.json*
+```json
+   {
+      "id": 8,
+      "data": "test invoke"
+   }
+```
 
 
 
